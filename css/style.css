@@ -1,0 +1,163 @@
+
+html{
+    font-size: 14px;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    padding: 0 ;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+}
+
+h1{
+    font-size: 1.7rem;
+    font-weight:600;
+    color: #403d40;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation ul li {
+    display: inline;
+    margin-right: 0.625rem;
+    
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color:#444444;
+}
+
+.navigation ul li a:hover {
+    color: #79e5e9; /* Couleur au survol */
+}
+
+.different-color{
+    color:#79e5e9;
+}
+
+.content{
+ padding-top:3.125rem;  
+ padding-bottom:135px; 
+ text-align: center;
+}
+
+.content h1 {
+    font-size: 80px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 600;
+    color:#403d40;
+    padding:0px;
+    margin:0px;
+}
+
+.content p {
+    font-weight: 200; 
+    font-size: 18px;
+    line-height: 1.5;
+    color: #403d40;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+footer{
+    height:50vh;
+    background-color: #ebf8f9;
+    
+}
+
+.phone{
+    font-size: 30px;
+    font-weight: 600;
+    color: #403d40;
+    margin: 0;
+    padding-top:199px;
+    text-align: center;
+}
+
+.footer-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/* CSS pour les grands écrans */
+@media screen and (min-width: 680px) {
+    .container{
+        width:70%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+
+    .content {
+        text-align: left;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+    }
+
+    .grid-item {
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+  
+  
